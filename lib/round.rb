@@ -41,5 +41,15 @@ class Round
   def over
     puts "****** Game over! ******"
     puts "You had #{number_correct} correct guesses out of #{@deck.count} for a score of #{percent_correct}%."
+    save_results
+  end
+
+  def save_results
+    current_time = Time.now.strftime("%Y-%d-%m-%H:%M%p")
+    f = File.new("./data/results-#{current_time}.txt", 'w+')
+    @guesses.each do |guess|
+      f.puts("#{guess.card.question},#{guess.card.answer},#{guess.response},#{guess.feedback}")
+    end
+    f.close
   end
 end

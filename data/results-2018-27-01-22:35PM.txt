@@ -1,0 +1,4 @@
+What is 5 + 5?,10,10,Correct!
+What is Rachel's favorite animal?,red panda,I don't know,Incorrect.
+What is Mike's middle name?,nobody knows,I don't know,Incorrect.
+What cardboard cutout lives at Turing?,Justin bieber,Justin bieber,Correct!
